@@ -1,9 +1,14 @@
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         row = len(matrix) # calculate # of rows
-        col = len(matrix) # calculate # of columns
-        if row == 0 or col == 0: # Corner case: empty matrix
+        
+        if row == 0 or len(matrix[0]) == 0: # Corner case: empty matrix
             return []
+        
+        col = len(matrix[0]) # calculate # of columns
+                             # The calculation of col must be after the above if statement
+                             # Otherwise empty matrix like [] with zero row and zero column
+                             # will cause error as there is no matrix[0] at all
         
         res = matrix[0] # First row of matrix will be always added to result for non-empty matrix
         
@@ -23,6 +28,10 @@ class Solution:
                     
         # Now we need to cut the remaining matrix into a new matrix and reuse the function
         # M = matrix[1:-1][1:-1] # Why this always gives empty array [] ???
+                                 # This does not work because this is a 2D array
+                                 # If the matrix is a np.array like np.asarray([[1, 2, 3], [4, 5, 6], 
+                                 # [7, 8, 9]]) then matrix[1:-1, 1:-1] will give new matrix [[5]]
+                    
         M = []
         for k in range(1, row-1): # Append row by row but excluding all elements that have already been 
                                   # added to the result
