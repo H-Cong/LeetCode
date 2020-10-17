@@ -30,6 +30,8 @@ class Solution:
         
         return res
         
-        # TC log(m*n) = log(N)
-        # SC log(N)
+        # TC O(m*n) = O(N)
+        # SC O(m*n) = O(N)
+        # This solution does not need extra space as what happened in the recursive solution. This this one is generally better than the recursive solution
+
                     
