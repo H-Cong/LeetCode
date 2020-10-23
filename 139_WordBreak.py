@@ -1,4 +1,5 @@
 """
+see discussion: https://leetcode.com/problems/word-break/discuss/169383/The-Time-Complexity-of-The-Brute-Force-Method-Should-Be-O(2n)-and-Prove-It-Below
 m is a dict to store whether any substring can be broke by the words in wordDict
 """
 class Solution:
