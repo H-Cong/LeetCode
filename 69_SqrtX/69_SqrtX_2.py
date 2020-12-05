@@ -17,3 +17,4 @@ class Solution:
     #    the smaller the convergence condition, the longer it takes to run
     
     # ref: https://blog.csdn.net/weixin_39244297/article/details/108772358
+    # ref: https://zhuanlan.zhihu.com/p/112707498
