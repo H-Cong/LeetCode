@@ -32,3 +32,8 @@ class Solution:
     # TC: O(n)
     
     # SC: O(1)
+    # It is very similar to the pre-order one, except that now we are doing everything reversely.
+    # By this I mean we go along the direction of right child and link the leftmost child on the
+    # right sub tree to the root. Then we leftappend the val to the result.
+
+    # ref: https://leetcode.com/problems/binary-tree-postorder-traversal/discuss/961894/
