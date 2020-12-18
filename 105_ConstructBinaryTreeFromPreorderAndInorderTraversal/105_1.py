@@ -26,3 +26,6 @@ class Solution:
     # find the index of root in inorder using root.val
     # split inorder with the root_index
     # recursive call to left and right subtree of the root
+
+    # ref: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/discuss/34613/A-Python-recursive-solution
+    # ref: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/discuss/34579/Python-short-recursive-solution.
