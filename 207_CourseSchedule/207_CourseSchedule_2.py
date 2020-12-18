@@ -3,7 +3,7 @@ class Solution:
         '''
         Topological Sorting + BFS
         '''
-        graph = collections.defaultdict(list)
+        graph = collections.defaultdict(list) # this graph is represented by adjacency list.
         inDegree = [0] * numCourses
         for p in prerequisites:
             graph[p[1]].append(p[0])  # In this case, we have to use p[1].append(p[0])

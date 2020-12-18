@@ -3,7 +3,7 @@ class Solution:
         '''
         Topological Sorting + DFS
         '''
-        graph = collections.defaultdict(list)
+        graph = collections.defaultdict(list) # this graph is represented by adjacency list. Another way can be adjacency table.
         for p in prerequisites:
             graph[p[0]].append(p[1])  # p[1].append(p[1]) also works
         # 0: unknown; 1: visiting; 2: visited
