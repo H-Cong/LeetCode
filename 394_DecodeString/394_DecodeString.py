@@ -16,9 +16,8 @@ class Solution:
                 curr = ''
                 k = 0
             elif c == ']':
-                k, last = stack.pop()
-                curr = last + k*curr
-                k = 0
+                last_k, last = stack.pop()
+                curr = last + last_k*curr
             else:
                 curr += c
         
